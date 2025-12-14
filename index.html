@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>hen nguoi dep di an</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Can i take u out this month ???</h1>
+
+  <div class="section date-box">
+    <h2>Are you free on... :></h2>
+    <input type="date" id="freeDate" min="2025-12-23" max="2026-01-04">
+    <br>
+    <button id="btnDate">he he he</button>
+    <p id="dateResult"></p>
+  </div>
+
+  <div class="section hidden" id="menuSection">
+    <h2>Let's get ur fav...</h2>
+    <div class="grid">
+      <div class="card" data-value="Pizza">
+        <img src="./img/doan/pizza.png">
+        <p>🍕 Pizza</p>
+      </div>
+      <div class="card" data-value="Gà rán">
+        <img src="./img/doan/garan.jpeg">
+        <p>🍗 Gà rán</p>
+      </div>
+      <div class="card" data-value="Hamburger">
+        <img src="./img/doan/hamberger.jpg">
+        <p>🍟 Hamburger</p>
+      </div>
+      <div class="card" data-value="Mì Ý">
+        <img src="./img/doan/myy.jpeg">
+        <p>🍜 Mì Ý</p>
+      </div>
+      <div class="card" data-value="Cơm nhật">
+        <img src="./img/doan/comnhat.jpg">
+        <p>🍣 Cơm nhật</p>
+      </div>
+      <div class="card" data-value="Đồ nướng">
+        <img src="./img/doan/donuong.jpeg">
+        <p>🥩 Đồ nướng</p>
+      </div>
+      
+      <div class="card" data-value="Bún phở">
+        <img src="./img/doan/bunpho.jpeg">
+        <p>🍲 Bún phở</p>
+      </div>
+      <div class="card" data-value="Món chay">
+        <img src="./img/doan/dochay.jpg">
+        <p>🥗 Món chay</p>
+      </div>
+      
+    </div>
+
+    <h2>What u wanna for dessert...</h2>
+    <div class="grid">
+      <div class="card" data-value="Trà sữa">
+        <img src="./img/douong/trasua.jpeg">
+        <p>🧋 Trà sữa</p>
+      </div>
+      <div class="card" data-value="Cà phê">
+        <img src="./img/douong/cafe.jpeg">
+        <p>🤎 Cà phê</p>
+      </div>
+      <div class="card" data-value="Nước cam">
+        <img src="./img/douong/tiramisu.jpg">
+        <p>🍰 Tiramisu</p>
+      </div>
+      <div class="card" data-value="Kem">
+        <img src="./img/douong/kem.jpeg">
+        <p>🍧 Kem</p>
+      </div>
+      <div class="card" data-value="Chè">
+        <img src="./img/douong/che.jpg">
+        <p>🍮 Chè</p>
+      </div>
+      
+      <div class="card" data-value="Bánh ngọt">
+        <img src="./img/douong/banh.jpeg">
+        <p>🍩 Bánh ngọt</p>
+      </div>
+      <div class="card" data-value="Sinh tố">
+        <img src="./img/douong/sinhto.png">
+        <p>🥭 Sinh tố</p>
+      </div>
+      <div class="card" data-value="Rượu vang">
+        <img src="./img/douong/ruou.png">
+        <p>🍷 Rượu vang 🙄 </p>
+      </div>
+      
+    </div>
+
+    <div style="text-align:center">
+      <button id="btnFinishMenu">Ô kê con bê 😘</button> </div>
+
+    <div class="result" id="foodResult"></div>
+  </div>
+
+  <div class="section hidden" id="movieSection">
+    <h2>Lên phim nha...</h2>
+    <div class="grid">
+  <div class="card" data-value="Hoàng Tử Quỷ">
+    <img src="./img/phim/hoangtuquy.png">
+    <p>Hoàng Tử Quỷ</p>
+    <small>Thể loại: Kinh dị | Thời lượng: 107 phút</small>
+  </div>
+  <div class="card" data-value="Phi Vụ Động Trời 2">
+    <img src="./img/phim/phivudongtroi2.png">
+    <p>Phi Vụ Động Trời 2</p>
+    <small>Thể loại: Hoạt hình | Thời lượng: 107 phút</small>
+  </div>
+  <div class="card" data-value="Avatar: Lửa và Tro Tàn">
+    <img src="./img/phim/avatar.png">
+    <p>Avatar: Lửa và Tro Tàn</p>
+    <small>Thể loại: Khoa học, viễn tưởng | Thời lượng: 133 phút</small>
+  </div>
+  <div class="card" data-value="Quán Kỳ Nam">
+    <img src="./img/phim/quankynam.jpg">
+    <p>Quán Ký Nam</p>
+    <small>Thể loại: Lãng mạn, Tâm lý | Thời lượng: 101 phút</small>
+  </div>
+  <div class="card" data-value="Truy Tìm Long Diên Hương">
+    <img src="./img/phim/truytimlongdienhuong.jpg">
+    <p>Truy Tìm Điên Điển Vương</p>
+    <small>Thể loại: Hành động, Hài hước | Thời lượng: 103 phút</small>
+  </div>
+  <div class="card" data-value="5 Centimet Trên Giây">
+    <img src="./img/phim/5centimet.png">
+    <p>5 Centimet Trên Giây</p>
+    <small>Thể loại: Tình cảm, Hoạt hình | Thời lượng: 95 phút</small>
+  </div>
+  <div class="card" data-value="Anh Trai Tài Lạ Khủng Long Tự Kỳ">
+    <img src="./img/phim/khunglongtuky.png">
+    <p>Anh Trai Tài Lạ Khủng Long Tự Kỳ</p>
+    <small>Thể loại: Hoạt hình, Thần thoại | Thời lượng: 95 phút</small>
+  </div>
+  <div class="card" data-value="Chú Thuật Hồi Chiến: Biến Cố Shibuya">
+    <img src="./img/phim/chuthuathoichien.jpg">
+    <p>Chú Thuật Hồi Chiến: Biến Cố Shibuya</p>
+    <small>Thể loại: Hoạt hình, Hành động | Thời lượng: 88 phút</small>
+  </div>
+  <div class="card" data-value="Em Sẽ Khử Anh">
+    <img src="./img/phim/emsekhuanh.png">
+    <p>Em Sẽ Khóc Anh</p>
+    <small>Thể loại: Giật gân, Hài hước | Thời lượng: 128 phút</small>
+  </div>
+  <div class="card" data-value="Nhà Hai Chủ">
+    <img src="./img/phim/nhahaichu.png">
+    <p>Nhà Hai Chủ</p>
+    <small>Thể loại: Kinh dị | Thời lượng: 102 phút</small>
+  </div>
+  <div class="card" data-value="Phòng Trọ Ma Bầu">
+    <img src="./img/phim/phongtromabau.jpg">
+    <p>Phòng Trọ Ma Bầu</p>
+    <small>Thể loại: Kinh dị, Hài hước | Thời lượng: 101 phút</small>
+  </div>
+  <div class="card" data-value="Thế Hệ Ký Tích">
+    <img src="./img/phim/thehekytich.png">
+    <p>Thế Hệ Ký Tích</p>
+    <small>Thể loại: Gia đình, Tâm lý | Thời lượng: 124 phút</small>
+  </div>
+</div>
+
+    <div style="text-align:center">
+      <button id="btnFinishMovie">Xác nhận phim 🫰</button>
+      <button id="btnSkipMovie">E không muốn đi xem phim à🤔</button>
+    </div>
+
+    <div class="result" id="movieResult"></div>
+  </div>
+
+  <div class="result hidden" id="finalResult"></div>
+</div>
+
+<script src="function.js"></script>
+</body>
+</html>
